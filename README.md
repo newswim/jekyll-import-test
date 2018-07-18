@@ -65,7 +65,30 @@ jekyll-theme-basically-basic
 ├── _config.yml                # sample configuration
 └── index.html                 # sample home page (blog page paginated)
 ```
-	
+
+
+## Random Notes
+
+I used `jekyll-import` to pull in all of the content and assets from our WP instance. Here's the script:
+
+```ruby
+require "jekyll-import"
+
+JekyllImport::Importers::WordpressDotCom.run({
+  "source" => "tm_wp.xml",
+  "no_fetch_images" => false,
+  "assets_folder" => "assets"
+})
+```
+
+The posts are a little wack right now, particularly where we're calling to the Soundcloud content, but there's nothing to handle it.
+
+TODO:
+- Try out this [jekyll-soundcloud](https://github.com/cnunciato/jekyll-soundcloud) library
+
+
+---
+
 ## Configure Type on Strap
 
 Open `_config.yml` in a text editor to change most of the blog's settings.
