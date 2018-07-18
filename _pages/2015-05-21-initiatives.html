@@ -1,0 +1,109 @@
+---
+layout: page
+title: Initiatives
+date: 2015-05-21 14:24:02.000000000 -05:00
+type: page
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags: []
+meta:
+  fw-shortcode-default-values: '{"section":{"style":{"style-box":"","parallax":{"background-image":"","layer":"","ratio":"0.4"},"custom":{"background_image":"none","position":"","repeat":"","attachment":"","video":"","layer":""}},"background_color":"","text_color":"","align":"default","enable_divider":{"enable_divider_switcher":"","border":{"position":"","background":""},"triangles":{"position":"","background":""},"halfcircle":{"position":"","background":"","icon":"","icon_color":""}},"padding":{"padding_option":"yes","yes":{"top":"45","bottom":"45","margin_top":"0","margin_bottom":"0"}},"full_width":"no","auto_height":"no","section_id":""}}'
+  fw-shortcode-settings: "[]"
+  _edit_last: '1'
+  fw_options: a:9:{s:12:"page-builder";a:2:{s:4:"json";s:2:"[]";s:14:"builder_active";b:1;}s:9:"title_bar";s:4:"hide";s:15:"footer_settings";s:7:"default";s:12:"header_style";a:2:{s:6:"option";s:0:"";s:11:"transparent";a:2:{s:16:"background_color";s:21:"rgba(255,255,255,0.3)";s:12:"border_color";s:0:"";}}s:12:"social_icons";s:0:"";s:12:"contact_info";s:0:"";s:12:"slider_above";a:2:{s:6:"option";s:2:"no";s:3:"yes";a:2:{s:5:"slide";s:1:"c";s:13:"scroll_effect";a:1:{s:6:"option";s:0:"";}}}s:22:"seo-titles-metas-title";s:0:"";s:28:"seo-titles-metas-description";s:0:"";}
+  _wp_page_template: default
+  fw:opt:ext:pb:page-builder:json: '[{"type":"section","atts":{"style":{"style-box":"gray","parallax":{"background-image":"","layer":"","ratio":"0.4"},"custom":{"background_image":"none","position":"","repeat":"","attachment":"","video":"","layer":""}},"background_color":"","text_color":"","align":"default","enable_divider":{"enable_divider_switcher":"none","border":{"position":"","background":""},"triangles":{"position":"","background":""},"halfcircle":{"position":"","background":"","icon":"","icon_color":""}},"padding":{"padding_option":"yes","yes":{"top":"45","bottom":"45","margin_top":"0","margin_bottom":"0"}},"full_width":"no","auto_height":"no","section_id":"section-58b38db6a9f13","custom_css":""},"_items":[{"type":"simple","shortcode":"portfolio","atts":{"data_source":{"data_source_options":"category","category":{"category_select":[]},"name":{"name_select":[]}},"columns":"3","style":"style-5","sortable":{"enable":"on","on":{"align":"text-left","box_style":"portfolio","background_color":"","text_color":"","margin_bottom":""}},"image_size":{"image_options":"custom","custom":{"width":"500","height":"300"}},"layout_mode":"fitRows","items":"6","pagination_option":"load_more","gap":"large","enable_animation":{"enable":"on","on":{"animation":"fade-in-up-big","data_delay":"100"}}}}]}]'
+  slide_template: default
+  _at_widget: '1'
+  _yoast_wpseo_content_score: '60'
+  _yoast_wpseo_metadesc: TechMill has a number of initiatives we provide that supports
+    the mission of providing education and build community.
+author:
+  login: superuser
+  email: info@techmill.co
+  display_name: Administrator
+  first_name: ''
+  last_name: ''
+---
+<p>jQuery(document).ready(function ($) {<br />
+ if($.fn.vglacier_iso_sort) {<br />
+ var $container = $('.img-boxes');<br />
+ $container.vglacier_iso_sort();<br />
+ }<br />
+ });<br />
+ (function($) {<br />
+ $.fn.vglacier_iso_sort = function(options) {<br />
+ return this.each(function() {<br />
+ var the_body = $('body'),<br />
+ container = $(this),<br />
+ portfolio_id = container.data('portfolio-id'),<br />
+ filter = container.parent().find('.filters[data-portfolio-id="' + portfolio_id + '"]'),<br />
+ imgParent = container.find('.object-non-visible');<br />
+ function applyIso()<br />
+ {<br />
+ container.isotope({<br />
+ layoutMode : 'fitRows',<br />
+ itemSelector : '.isotope-item',<br />
+ transitionDuration: '0.6s',<br />
+ filter: "*"<br />
+ }, function()<br />
+ {<br />
+ container.css({overflow:'visible'});<br />
+// the_body.trigger('av_resize_finished');<br />
+ });<br />
+ // filter items on button click<br />
+ filter.on('click', 'ul.nav li a', function () {<br />
+ var filterValue = $(this).attr('data-filter');<br />
+ $(".filters").find("li.active").removeClass("active");<br />
+ $(this).parent().addClass("active");<br />
+ container.isotope({filter: filterValue});<br />
+ return false;<br />
+ });<br />
+ };<br />
+ // update columnWidth on window resize<br />
+ $(window).on( 'debouncedresize', function()<br />
+ {<br />
+ applyIso();<br />
+ });<br />
+ $.vglacier_utilities.preload({container: container, single_callback: function() {<br />
+ applyIso();<br />
+ }<br />
+ });<br />
+ });<br />
+ }<br />
+ })(this.jQuery);<br />
+ <a href="#" data-filter="*">All</a><br />
+ <a href="#" data-filter=".8-education">Education</a><br />
+ <a href="#" data-filter=".7-technology">Technology</a><br />
+ <a href="https://techmill.co/initiatives/open-denton/" class="mask-wrapper"><br />
+ <img data-no-retina width="500" height="300" src="{{ site.baseurl }}/assets/opendenton-smart-e1488165474661.jpg" alt="Open Denton" /><br />
+ Education<br />
+ </a></p>
+<h3><a href="https://techmill.co/initiatives/open-denton/">Open Denton</a></h3>
+<p>Open Denton is a grassroots open data initiative to promote public datasets, improve government transparency, expand awareness, and increase civic engagement in Denton, Texas. We are a diverse group of people with a wide variety of technical and non-technical skills.</p>
+<p> <a class="btn btn-default btn-pill" href="https://techmill.co/initiatives/open-denton/">Read more</a><br />
+ <a href="https://techmill.co/initiatives/openhack-denton/" class="mask-wrapper"><br />
+ <img data-no-retina width="500" height="300" src="{{ site.baseurl }}/assets/openhack.jpg" alt="OpenHack Denton" /><br />
+ Education<br />
+ </a></p>
+<h3><a href="https://techmill.co/initiatives/openhack-denton/">OpenHack Denton</a></h3>
+<p>OpenHack is a meetup that gets local developers together to code together, on anything.</p>
+<p> <a class="btn btn-default btn-pill" href="https://techmill.co/initiatives/openhack-denton/">Read more</a><br />
+ <a href="https://techmill.co/initiatives/littled-open-coffee-club/" class="mask-wrapper"><br />
+ <img data-no-retina width="500" height="300" src="{{ site.baseurl }}/assets/littledocc-wp-500x300.jpg" alt="LittleDOCC | Open Coffee Club" /><br />
+ Education<br />
+ </a></p>
+<h3><a href="https://techmill.co/initiatives/littled-open-coffee-club/">LittleDOCC | Open Coffee Club</a></h3>
+<p>LittleD Open Coffee Club is a twice monthly moderated chat about the latest in technology, startups, digital lifestyle, and business. </p>
+<p> <a class="btn btn-default btn-pill" href="https://techmill.co/initiatives/littled-open-coffee-club/">Read more</a><br />
+ <a href="https://techmill.co/initiatives/data-centers/" class="mask-wrapper"><br />
+ <img data-no-retina width="500" height="300" src="{{ site.baseurl }}/assets/shutterstock_110415215-500x300.jpg" alt="Data Centers" /><br />
+ Technology<br />
+ </a></p>
+<h3><a href="https://techmill.co/initiatives/data-centers/">Data Centers</a></h3>
+<p>Ne pro quaeque labores liberavisse, sumo hendrerit in nam. No duo dico atomorum, nam dicit consetetur in.</p>
+<p> <a class="btn btn-default btn-pill" href="https://techmill.co/initiatives/data-centers/">Read more</a></p>
+<p><!-- d09a81ae43b82ec2433d7aefe72d4422 --></p>

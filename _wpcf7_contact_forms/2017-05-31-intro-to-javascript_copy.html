@@ -1,0 +1,211 @@
+---
+layout: wpcf7_contact_form
+title: Intro to Web Development
+date: 2017-05-31 17:09:23.000000000 -05:00
+type: wpcf7_contact_form
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags: []
+meta:
+  _form: "<div class=\"form-inline margin-bottom\">\n    <div class=\"form-group\">\n
+    \       <label>First Name <span style=\"color:red;\">*</span></label>\n        [text*
+    FirstName]\n    </div>\n    <div class=\"form-group\">\n        <label>Last Name
+    <span style=\"color:red;\">*</span></label>\n        [text* LastName]\n    </div>\n
+    \   <div class=\"form-group\">\n        <label>Age <span style=\"color:red;\">*</span></label>\n
+    \       [number* age min:16 max:85]\n    </div>\n</div>\n<div class=\"contact
+    row\">\n    <div class=\"form-group col-md-6\">\n        <label>Email <span style=\"color:red;\">*</span></label>\n
+    \       [email* email]\n    </div>\n    <div class=\"form-group col-md-6\">\n
+    \       <label>Phone</label>\n        [tel phone]\n    </div>\n</div>\n<div class=\"form-inline
+    row margin-bottom margin-top\">\n    <div class=\"form-group col-md-4\">\n        <label>City
+    <span style=\"color:red;\">*</span></label>\n        [text* city placeholder \"Denton\"]\n
+    \   </div>\n    <div class=\"form-group col-md-4\">\n        <label>State <span
+    style=\"color:red;\">*</span></label>\n        [text* state placeholder \"Texas\"]\n
+    \   </div>\n    <div class=\"form-group col-md-4\">\n        <label>Zip <span
+    style=\"color:red;\">*</span></label>\n        [text* zip placeholder \"76201\"]\n
+    \   </div>\n</div>\n\n<div class=\"form-group\">\n    <label>How did you hear
+    about us?</label>\n    [select marketing \"Newsletter\" \"Online search\" \"Meetup\"
+    \"Social media\" \"Referral\" \"Other\"]\n</div>\n<p>\n<span class=\"help-block\">We
+    only require this data for aggregate purposes and qualifiers (confirm age, for
+    example). This helps us determine the level of interest not just in Denton, but
+    the surrounding area as well.</span>\n<br><br>\n<span class=\"help-block\">We
+    will never sell your data to 3rd party vendors.</span>\n</p>\n<hr>\n<div class=\"col-md-8
+    col-md-push-2\">\n    <div class=\"heading-block text-center \">\n        <h3
+    class=\"special-heading\">Requirements</h3>\n    </div>\n    <div class=\"text-block\">\n
+    \       <p>Like everything else, there are a few requirements to signing up for
+    this course.</p>\n<ul>\n \t<li class=\"li1\">You are at least 16 years old</li>\n
+    \t<li class=\"li1\">You agree to <a href=\"https://help.github.com/articles/github-terms-of-service\">GitHub's
+    Terms of Service</a></li>\n \t<li class=\"li1\">You will provide your own hardware
+    (laptop)</li>\n \t<li class=\"li1\">You will provide feedback about the program.</li>\n</ul>\n
+    \   </div>\n    <style>\n        .form-group.tos-accept {\n            display:
+    inline-block;\n        }\n        div.wpcf7 .form-inline .form-group {\n           max-width:
+    230px;\n        }\n        div.wpcf7 .form-inline .form-group.age input {\n           min-width:
+    190px;\n        }\n    </style>\n    [acceptance tos-accept default:on] I agree
+    to these requirements. <span style=\"color:red;\">*</span>\n    [hidden program
+    \"workshop-web-development\"]\n    <div class=\"text-center\">\n        [submit
+    class:btn class:btn-default \"Enroll\"]\n    </div>\n</div>"
+  _mail: "a:9:{s:6:\"active\";b:1;s:7:\"subject\";s:40:\"TechMill Denton | Application:
+    [program]\";s:6:\"sender\";s:32:\"[FirstName] [LastName] <[email]>\";s:9:\"recipient\";s:16:\"info@techmill.co\";s:4:\"body\";s:218:\"Name:
+    [FirstName] [LastName]\nEmail: [email]\nPhone: [phone]\nAddress: [city], [state]
+    [zip]\nMarketing: [marketing]\nProgram: [program]\n\n-- \nThis e-mail was sent
+    from a contact form on TechMill Denton (https://techmill.co)\";s:18:\"additional_headers\";s:17:\"Reply-To:
+    [email]\";s:11:\"attachments\";s:0:\"\";s:8:\"use_html\";b:0;s:13:\"exclude_blank\";b:0;}"
+  _mail_2: "a:9:{s:6:\"active\";b:0;s:7:\"subject\";s:32:\"TechMill Denton \"[your-subject]\"\";s:6:\"sender\";s:34:\"TechMill
+    Denton <info@techmill.co>\";s:9:\"recipient\";s:12:\"[your-email]\";s:4:\"body\";s:115:\"Message
+    Body:\n[your-message]\n\n-- \nThis e-mail was sent from a contact form on TechMill
+    Denton (https://techmill.co)\";s:18:\"additional_headers\";s:26:\"Reply-To: info@techmill.co\";s:11:\"attachments\";s:0:\"\";s:8:\"use_html\";b:0;s:13:\"exclude_blank\";b:0;}"
+  _messages: a:23:{s:12:"mail_sent_ok";s:49:"Thank you for your application! It has
+    been sent.";s:12:"mail_sent_ng";s:77:"There was an error trying to submit your
+    application. Please try again later.";s:16:"validation_error";s:61:"One or more
+    fields have an error. Please check and try again.";s:4:"spam";s:71:"There was
+    an error trying to send your message. Please try again later.";s:12:"accept_terms";s:69:"You
+    must accept the terms and conditions before sending your message.";s:16:"invalid_required";s:22:"The
+    field is required.";s:16:"invalid_too_long";s:22:"The field is too long.";s:17:"invalid_too_short";s:23:"The
+    field is too short.";s:12:"invalid_date";s:29:"The date format is incorrect.";s:14:"date_too_early";s:44:"The
+    date is before the earliest one allowed.";s:13:"date_too_late";s:41:"The date
+    is after the latest one allowed.";s:13:"upload_failed";s:46:"There was an unknown
+    error uploading the file.";s:24:"upload_file_type_invalid";s:49:"You are not allowed
+    to upload files of this type.";s:21:"upload_file_too_large";s:20:"The file is
+    too big.";s:23:"upload_failed_php_error";s:38:"There was an error uploading the
+    file.";s:14:"invalid_number";s:29:"The number format is invalid.";s:16:"number_too_small";s:47:"The
+    number is smaller than the minimum allowed.";s:16:"number_too_large";s:46:"The
+    number is larger than the maximum allowed.";s:23:"quiz_answer_not_correct";s:36:"The
+    answer to the quiz is incorrect.";s:17:"captcha_not_match";s:31:"Your entered
+    code is incorrect.";s:13:"invalid_email";s:38:"The e-mail address entered is invalid.";s:11:"invalid_url";s:19:"The
+    URL is invalid.";s:11:"invalid_tel";s:32:"The telephone number is invalid.";}
+  _additional_settings: ''
+  _locale: en_US
+  _cf7pp_enable: '0'
+  _cf7pp_name: Introduction to Web Development
+  _cf7pp_price: '800'
+  _cf7pp_id: workshop-web-development
+  _cf7pp_email: '2'
+  _config_errors: a:1:{s:11:"mail.sender";a:1:{i:0;a:2:{s:4:"code";i:103;s:4:"args";a:3:{s:7:"message";s:0:"";s:6:"params";a:0:{}s:4:"link";s:70:"https://contactform7.com/configuration-errors/email-not-in-site-domain";}}}}
+author:
+  login: superuser
+  email: info@techmill.co
+  display_name: Administrator
+  first_name: ''
+  last_name: ''
+---
+<div class="form-inline margin-bottom">
+<div class="form-group">
+        <label>First Name <span style="color:red;">*</span></label><br />
+        [text* FirstName]
+    </div>
+<div class="form-group">
+        <label>Last Name <span style="color:red;">*</span></label><br />
+        [text* LastName]
+    </div>
+<div class="form-group">
+        <label>Age <span style="color:red;">*</span></label><br />
+        [number* age min:16 max:85]
+    </div>
+</div>
+<div class="contact row">
+<div class="form-group col-md-6">
+        <label>Email <span style="color:red;">*</span></label><br />
+        [email* email]
+    </div>
+<div class="form-group col-md-6">
+        <label>Phone</label><br />
+        [tel phone]
+    </div>
+</div>
+<div class="form-inline row margin-bottom margin-top">
+<div class="form-group col-md-4">
+        <label>City <span style="color:red;">*</span></label><br />
+        [text* city placeholder "Denton"]
+    </div>
+<div class="form-group col-md-4">
+        <label>State <span style="color:red;">*</span></label><br />
+        [text* state placeholder "Texas"]
+    </div>
+<div class="form-group col-md-4">
+        <label>Zip <span style="color:red;">*</span></label><br />
+        [text* zip placeholder "76201"]
+    </div>
+</div>
+<div class="form-group">
+    <label>How did you hear about us?</label><br />
+    [select marketing "Newsletter" "Online search" "Meetup" "Social media" "Referral" "Other"]
+</div>
+<p>
+<span class="help-block">We only require this data for aggregate purposes and qualifiers (confirm age, for example). This helps us determine the level of interest not just in Denton, but the surrounding area as well.</span></p>
+<p><span class="help-block">We will never sell your data to 3rd party vendors.</span></p>
+<hr />
+<div class="col-md-8 col-md-push-2">
+<div class="heading-block text-center ">
+<h3 class="special-heading">Requirements</h3>
+</p></div>
+<div class="text-block">
+<p>Like everything else, there are a few requirements to signing up for this course.</p>
+<ul>
+<li class="li1">You are at least 16 years old</li>
+<li class="li1">You agree to <a href="https://help.github.com/articles/github-terms-of-service">GitHub's Terms of Service</a></li>
+<li class="li1">You will provide your own hardware (laptop)</li>
+<li class="li1">You will provide feedback about the program.</li>
+</ul></div>
+<style>
+        .form-group.tos-accept {<br />
+            display: inline-block;<br />
+        }<br />
+        div.wpcf7 .form-inline .form-group {<br />
+           max-width: 230px;<br />
+        }<br />
+        div.wpcf7 .form-inline .form-group.age input {<br />
+           min-width: 190px;<br />
+        }<br />
+    </style>
+<p>    [acceptance tos-accept default:on] I agree to these requirements. <span style="color:red;">*</span><br />
+    [hidden program "workshop-web-development"]</p>
+<div class="text-center">
+        [submit class:btn class:btn-default "Enroll"]
+    </div>
+</div>
+<p>1<br />
+TechMill Denton | Application: [program]<br />
+[FirstName] [LastName] <[email]><br />
+info@techmill.co<br />
+Name: [FirstName] [LastName]<br />
+Email: [email]<br />
+Phone: [phone]<br />
+Address: [city], [state] [zip]<br />
+Marketing: [marketing]<br />
+Program: [program]</p>
+<p>--<br />
+This e-mail was sent from a contact form on TechMill Denton (https://techmill.co)<br />
+Reply-To: [email]</p>
+<p>TechMill Denton "[your-subject]"<br />
+TechMill Denton <info@techmill.co><br />
+[your-email]<br />
+Message Body:<br />
+[your-message]</p>
+<p>--<br />
+This e-mail was sent from a contact form on TechMill Denton (https://techmill.co)<br />
+Reply-To: info@techmill.co</p>
+<p>Thank you for your application! It has been sent.<br />
+There was an error trying to submit your application. Please try again later.<br />
+One or more fields have an error. Please check and try again.<br />
+There was an error trying to send your message. Please try again later.<br />
+You must accept the terms and conditions before sending your message.<br />
+The field is required.<br />
+The field is too long.<br />
+The field is too short.<br />
+The date format is incorrect.<br />
+The date is before the earliest one allowed.<br />
+The date is after the latest one allowed.<br />
+There was an unknown error uploading the file.<br />
+You are not allowed to upload files of this type.<br />
+The file is too big.<br />
+There was an error uploading the file.<br />
+The number format is invalid.<br />
+The number is smaller than the minimum allowed.<br />
+The number is larger than the maximum allowed.<br />
+The answer to the quiz is incorrect.<br />
+Your entered code is incorrect.<br />
+The e-mail address entered is invalid.<br />
+The URL is invalid.<br />
+The telephone number is invalid.</p>
